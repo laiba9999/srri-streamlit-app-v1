@@ -35,6 +35,19 @@ srri_app_package/
 
 ---
 
+**Identifier logic**
+A Fund is the main legal investment vehicle, often set up as an umbrella with multiple **sub-funds**, each having its own strategy and assets. Within each sub-fund, there are different share classes that offer variations in currency, fees, income distribution, or hedging—allowing the same portfolio to be tailored to different investor needs. Therefore, I decided to use Share Class as my unique identifier.
+
+
+Fund (Umbrella) ──────────────▶ First Trust Global Funds plc
+    │
+    ├── Sub-Fund ─────────────▶ First Trust US Large Cap Core AlphaDEX® UCITS ETF
+    │     ├── Share Class ───▶ Class A Acc USD
+    │     └── Share Class ───▶ Class I Dis GBP (Hedged)
+    └── Sub-Fund ─────────────▶ First Trust Eurozone AlphaDEX® UCITS ETF
+          └── Share Class ───▶ Class A Dis EUR
+
+
 ## 💻 How to Run the App Locally
 
 ### 1. Clone the repository
