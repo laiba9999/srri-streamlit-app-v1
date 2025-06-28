@@ -70,7 +70,7 @@ if file_monitoring and file_permalink:
                 st.download_button(
                     label="📥 Download SRRI Update File",  # Button label
                     data=csv_data,  # File content
-                    file_name="srri_updates_needed_v2.csv",  # File name on download
+                    file_name="srri_updates_needed.csv",  # File name on download
                     mime="text/csv"  # MIME type
                 )
 
