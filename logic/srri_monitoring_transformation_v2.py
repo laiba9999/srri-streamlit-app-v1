@@ -163,15 +163,17 @@ def process_monitoring_file(file):
         .str.replace("-", "_")         # Replace hyphens with underscores (like SUB-FUND → SUB_FUND)
     )
 
-
+    summary_df.to_csv("srri_monitoring_output_v1.csv", index=False)
 
     # OPTIONAL: If you want to see remaining Identifier counts
     # print(summary_df["Identifier"].value_counts())
 
+    """    # === Debug: Print intermediate data types ===
     # === Debug: Print final data types ===
     print(summary_df.dtypes)
     print(summary_df.head())
     summary_df.to_csv("srri_summary_output_3.csv", index=False)
+    """
 
     return summary_df
 
